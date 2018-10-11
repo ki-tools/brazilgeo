@@ -1,6 +1,6 @@
 # brazilmunis
 
-This simple R package contains shapefiles for all municipalities in Brazil, as well as a data frame of municipality codes
+This simple R package contains shapefiles for all municipalities in Brazil, as well as a data frame of municipality, microregion, mesoregion, and region codes and names for all municipalities.
 
 ## Installation ##
 
