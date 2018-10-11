@@ -6,7 +6,7 @@ This simple R package contains shapefiles for all municipalities in Brazil, as w
 
 ```r
 # install.packages("devtools")
-devtools::install_github("ki-tools/kitools")
+devtools::install_github("ki-tools/brazilmunis")
 ```
 
 ## Usage ##
