@@ -53,8 +53,16 @@ d2 <- left_join(d,
 
 d3 <- left_join(d2, state_codes, by = "state_code")
 
-muni_codes <- d3
+tmp <- data_frame(
+  muni_code = as.character(brazil_munis$muni_code),
+  state_code2 = brazil_munis$state_code
+)
+
+d4 <- left_join(d3, tmp)
+
+muni_codes <- select(d4,
+  muni_name, muni_code, micro_name, micro_code,
+  meso_name, meso_code, state_name, state_code, 
+  state_code2, region_name, region_code)
 
 use_data(muni_codes, overwrite = TRUE)
-
-
