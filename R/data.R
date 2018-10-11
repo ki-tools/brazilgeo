@@ -5,3 +5,11 @@
 #' @usage brazil_munis
 #' @md
 NULL
+
+#' List of all municipalities in Brazil
+#' @name muni_codes
+#' @description
+#' List of all municipalities in Brazil and associated municipality, microregion, mesoregion, and region codes and names. Data from IGBE.
+#' @usage muni_codes
+#' @md
+NULL
