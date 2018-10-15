@@ -11,7 +11,9 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  dpi = 300,
+  fig.width = 7
 )
 ```
 # brazilmunis
@@ -36,8 +38,6 @@ sp::plot(subset(br_muni_geo, state_code == "AC"))
 ```{r meso-map}
 sp::plot(br_meso_geo)
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
 ```{r example3}
 dplyr::glimpse(br_muni_codes)

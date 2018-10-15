@@ -30,8 +30,6 @@ sp::plot(br_meso_geo)
 
 <img src="man/figures/README-meso-map-1.png" width="100%" />
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
 ``` r
 dplyr::glimpse(br_muni_codes)
 #> Observations: 5,570
