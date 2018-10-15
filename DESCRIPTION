@@ -1,6 +1,6 @@
 Package: brazilmunis
 Title: Spatial Polygons for Municipalities in Brazil
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre"))
 Description: Provides spatial polygons for 5805 municipalities in Brazil.
 Depends: R (>= 3.5.0)

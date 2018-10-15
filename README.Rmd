@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+# rmarkdown::render("README.Rmd")
+# unlink("README.html")
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# brazilmunis
+
+This simple R package contains shapefiles for all municipalities, micro-regions, and meso-regions in Brazil, as well as data frames of municipality, micro-region, meso-region, state, and region codes and names for each level of geographic resolution.
+
+## Installation
+
+```r
+# install.packages("devtools")
+devtools::install_github("ki-tools/brazilmunis")
+```
+
+## Usage ##
+
+```{r muni-map}
+library(brazilmunis)
+
+sp::plot(subset(br_muni_geo, state_code == "AC"))
+```
+
+```{r meso-map}
+sp::plot(br_meso_geo)
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r example3}
+dplyr::glimpse(br_muni_codes)
+```
+
+```{r example4}
+dplyr::glimpse(br_micro_codes)
+```
+
+```{r example5}
+dplyr::glimpse(br_meso_codes)
+```
+
+```{r example6}
+dplyr::glimpse(br_state_codes)
+```
