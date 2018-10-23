@@ -1,8 +1,8 @@
-Package: brazilmunis
-Title: Spatial Polygons for Municipalities in Brazil
+Package: brazilgeo
+Title: Spatial Polygons for Geographic Entities in Brazil
 Version: 0.0.2
 Authors@R: person("Ryan", "Hafen", email = "rhafen@gmail.com", role = c("aut", "cre"))
-Description: Provides spatial polygons for 5805 municipalities in Brazil.
+Description: Provides shapefiles for all municipalities, micro-regions, meso-regions, and states in Brazil, as well as data frames of municipality, micro-region, meso-region, state, and region codes and names for each level of geographic resolution.
 Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8

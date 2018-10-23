@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-brazilmunis
-===========
+brazilgeo
+=========
 
 This simple R package contains shapefiles for all municipalities, micro-regions, and meso-regions in Brazil, as well as data frames of municipality, micro-region, meso-region, state, and region codes and names for each level of geographic resolution.
 
@@ -10,14 +10,14 @@ Installation
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ki-tools/brazilmunis")
+devtools::install_github("ki-tools/brazilgeo")
 ```
 
 Usage
 -----
 
 ``` r
-library(brazilmunis)
+library(brazilgeo)
 
 sp::plot(subset(br_muni_geo, state_code == "AC"))
 ```

@@ -6,6 +6,7 @@ output: github_document
 
 ```{r setup, include = FALSE}
 # rmarkdown::render("README.Rmd")
+# system("open README.html")
 # unlink("README.html")
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -16,7 +17,7 @@ knitr::opts_chunk$set(
   fig.width = 7
 )
 ```
-# brazilmunis
+# brazilgeo
 
 This simple R package contains shapefiles for all municipalities, micro-regions, and meso-regions in Brazil, as well as data frames of municipality, micro-region, meso-region, state, and region codes and names for each level of geographic resolution.
 
@@ -24,13 +25,13 @@ This simple R package contains shapefiles for all municipalities, micro-regions,
 
 ```r
 # install.packages("devtools")
-devtools::install_github("ki-tools/brazilmunis")
+devtools::install_github("ki-tools/brazilgeo")
 ```
 
 ## Usage ##
 
 ```{r muni-map}
-library(brazilmunis)
+library(brazilgeo)
 
 sp::plot(subset(br_muni_geo, state_code == "AC"))
 ```
